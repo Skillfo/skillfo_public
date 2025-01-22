@@ -1,0 +1,58 @@
+/* Color Variables */
+:root {
+    --black: #151515;
+    --white: #F1F1F8;
+    --accent: #292E72;
+  }
+  
+  /* Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Calibri', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+  }
+  
+  /* Heading */
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  
+  /* Status Text */
+  .status {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--black);
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    .status {
+      font-size: 1rem;
+    }
+  }

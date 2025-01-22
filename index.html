@@ -3,159 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skillfo Landing Page</title>
+  <title>Skillfo Careers</title>
   
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: DM Serif Display -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   
-  <style>
-    /* Define CSS Variables */
-    :root {
-      --french-grey: #d1d5db; /* Adjust as needed */
-      --night: #0f172a; /* Dark navy */
-      --persian-indigo: #1e40af; /* Deep blue */
-      --ghost-white: #f8f8ff; /* Light ghost white */
-    }
-
-    /* Keyframes for Shine Animation */
-    @keyframes shine {
-      from {
-        background-position: 200% center;
-      }
-      to {
-        background-position: -200% center;
-      }
-    }
-
-    /* Custom Classes */
-    .dm_font {
-      /* Define your custom font or styles here */
-      /* Example: */
-      font-family: 'DM Sans', sans-serif;
-    }
-
-    /* Additional Styles if Needed */
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-black text-white min-h-screen">
-  
-  <!-- Header -->
-  <header class="flex items-center justify-between border-b border-[var(--french-grey)] px-8 py-4 bg-[var(--night)]">
-    <h1 class="text-4xl font-bold tracking-wide">Skillfo</h1>
-    <nav class="flex space-x-8">
-      <a href="#services" class="hover:opacity-75 uppercase text-sm font-medium">Services</a>
-      <a href="#about" class="hover:opacity-75 uppercase text-sm font-medium">About</a>
-      <a href="#contact" class="hover:opacity-75 uppercase text-sm font-medium">Contact</a>
-    </nav>
-  </header>
-  
-  <!-- Hero Section -->
-  <section class="flex flex-col items-center justify-center text-center py-24 bg-gradient-to-b from-[var(--night)] to-[var(--persian-indigo)]">
-    <h1 class="text-5xl sm:text-6xl font-bold mb-8 tracking-tight leading-tight">
-      <span class="text-gray-200">Empower Your Career With</span>
-      <span
-        class="relative inline-block text-transparent bg-clip-text pl-3"
-        style="
-          background-image: linear-gradient(to right, #ddf, #889, #ddf);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-size: 200% auto;
-          animation: shine 3s linear infinite;
-        "
-      >
-        Skillfo
-      </span>
-    </h1>
-    <p class="text-gray-400 text-lg sm:text-xl mb-12 max-w-3xl leading-relaxed">
-      Transform your professional journey with cutting-edge insights and tailored strategies designed just for you.
-    </p>
-    <a href="#contact" class="px-8 py-3 text-[var(--ghost-white)] font-bold border border-[var(--ghost-white)] shadow-xl dm_font hover:bg-white/10">
-      Get Started
-    </a>
-  </section>
-  
-  <!-- Services Section -->
-  <section id="services" class="py-24 px-8 bg-[var(--persian-indigo)]">
-    <h2 class="text-4xl font-bold text-center mb-16 tracking-wide">Core Skillfo Values</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-      <div class="text-center p-6 border border-gray-700 bg-slate-950 shadow-xl">
-        <h3 class="text-xl font-semibold mb-4 dm_font">Clients First</h3>
-        <p class="text-gray-400 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tailored strategies for your success.
-        </p>
-      </div>
-      <div class="text-center p-6 border border-gray-700 bg-slate-950 shadow-xl">
-        <h3 class="text-xl font-semibold mb-4 dm_font">Image-Conscious</h3>
-        <p class="text-gray-400 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Stand out from the crowd.
-        </p>
-      </div>
-      <div class="text-center p-6 border border-gray-700 bg-slate-950 shadow-xl">
-        <h3 class="text-xl font-semibold mb-4 dm_font">Thorough</h3>
-        <p class="text-gray-400 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Build skills that matter.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-  <!-- About Section -->
-  <section id="about" class="py-24 px-8 bg-gradient-to-t from-[var(--night)] to-[var(--persian-indigo)]">
-    <h2 class="text-4xl font-bold text-center mb-16 tracking-wide">About Skillfo</h2>
-    <div class="max-w-4xl mx-auto text-center">
-      <p class="text-gray-400 leading-relaxed">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our team of experienced consultants is dedicated to empowering professionals like you to achieve their career aspirations. Whether you’re just starting out or looking to make a big leap, we’re here to guide you every step of the way.
-      </p>
-    </div>
-  </section>
-  
-  <!-- Contact Section -->
-  <section id="contact" class="py-24 px-8 bg-[var(--night)]">
-    <h2 class="text-4xl font-bold text-center mb-16 tracking-wide">Get in Touch</h2>
-    <div class="max-w-xl mx-auto">
-      <form class="flex flex-col space-y-6">
-        <input
-          type="text"
-          placeholder="Your Name"
-          class="bg-black text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 px-4 py-3"
-          required
-        />
-        <input
-          type="email"
-          placeholder="Your Email"
-          class="bg-black text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 px-4 py-3"
-          required
-        />
-        <textarea
-          placeholder="Your Message"
-          class="bg-black text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 px-4 py-3"
-          rows="5"
-          required
-        ></textarea>
-        <button
-          type="submit"
-          class="px-8 py-3 bg-gradient-to-r from-gray-700 to-gray-500 text-white font-medium uppercase tracking-wide border border-gray-600 hover:from-gray-600 hover:to-gray-400 transition-colors duration-300"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
-  </section>
-  
-  <!-- Footer -->
-  <footer class="py-6 border-t border-gray-700 text-center">
-    <p class="text-gray-500 text-sm uppercase tracking-wide">&copy; 2025 Skillfo. All rights reserved.</p>
-  </footer>
-  
-  <!-- Optional JavaScript -->
-  <script>
-    // If you need to add any custom JavaScript, you can include it here.
-    // Currently, the form does not have any submission handling.
-    document.querySelector('form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      alert('Thank you for contacting us!');
-      // Add your form submission logic here
-    });
-  </script>
+<body>
+  <div class="container">
+    <h1>Skillfo Careers</h1>
+    <p class="status">Site in progress.</p>
+  </div>
 </body>
 </html>
